@@ -15,36 +15,6 @@ import androidx.appcompat.app.AppCompatDelegate
 
 class MainActivity : AppCompatActivity() {
     private lateinit var webView: WebView
-    /*override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
-        setContentView(R.layout.activity_main)
-
-        //light тема
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-
-        webView = findViewById(R.id.webview)
-        webView.settings.setJavaScriptEnabled(true)
-        webView.webViewClient = object : WebViewClient() {
-            override fun onPageFinished(view: WebView?, url: String?) {
-                super.onPageFinished(view, url)
-                findViewById<FrameLayout>(R.id.splash_screen).apply {
-                    visibility= View.GONE
-                }
-            }
-
-            override fun shouldOverrideUrlLoading(view: WebView?, url: String): Boolean {
-                view?.loadUrl(url)
-                return true
-            }
-        }
-        webView
-        val url=resources.getString(R.string.url)
-        webView.loadUrl( url)
-    }*/
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
